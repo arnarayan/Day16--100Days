@@ -62,7 +62,7 @@ struct ContentView: View {
                     }
                     
                     Section {
-                        Text("\(totalBill)")
+                        Text("\(totalBill)").foregroundColor(totalBill == 0 ? Color.red : Color.black)
                     } header: {
                         Text("total amount for the cheque:")
                     }
